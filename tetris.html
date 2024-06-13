@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄羅斯方塊 - 遊戲大廳</title>
+    <link rel="stylesheet" href="assets/styles/tetris.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>俄羅斯方塊</h1>
+        <div id="score">分數: 0</div>
+        <div id="tetris-game">
+            <canvas id="tetris-canvas" width="240" height="400"></canvas>
+        </div>
+        <div id="controls">
+            <button id="start-button" onclick="startGame()">開始遊戲</button>
+            <button id="restart-button" style="display:none;" onclick="startGame()">重新開始遊戲</button>
+            <button class="back-button" onclick="window.location.href='index.html'">返回遊戲大廳</button>
+        </div>
+        <div id="game-over" style="display:none;">Game Over!</div>
+    </div>
+
+    <script src="js/tetris.js"></script>
+</body>
+</html>

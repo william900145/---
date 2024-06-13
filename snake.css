@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+#snake-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+canvas {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#game-over p {
+    margin-top: 40px;
+    font-size: 40px;
+    color: red;
+}

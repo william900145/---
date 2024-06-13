@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貪食蛇 - 遊戲大廳</title>
+    <link rel="stylesheet" href="assets/styles/snake.css">
+</head>
+<body>
+    <h1>貪食蛇</h1>
+    <button class="back-button" onclick="window.location.href='index.html'">返回遊戲大廳</button>
+    <div id="snake-game">
+        <canvas id="snake-canvas" width="300" height="300"></canvas>
+    </div>
+    <div id="score">分數: 0</div>
+    <div id="game-over" class="hidden">
+        <p>Game over!</p>
+        <button onclick="restartGame()">重新開始遊戲</button>
+    </div>
+
+    <script src="js/snake.js"></script>
+</body>
+</html>

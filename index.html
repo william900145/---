@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲大廳</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>遊戲大廳</h1>
+    <div id="game-lobby">
+        <div class="game-option">
+            <img src="assets/images/snake.png" alt="貪吃蛇">
+            <button onclick="openGame('snake.html')">貪吃蛇</button>
+            <p>經典的貪吃蛇遊戲，吃掉食物讓蛇變長，但要小心不要撞到牆壁或自己的身體！</p>
+        </div>
+        <div class="game-option">
+            <img src="assets/images/minesweeper.png" alt="踩地雷">
+            <button onclick="openGame('minesweeper.html')">踩地雷</button>
+            <p>經典的踩地雷遊戲，左鍵打開，右鍵標記，避免踩到地雷並找出所有安全的格子。</p>
+        </div>
+        <div class="game-option">
+            <img src="assets/images/tetris.png" alt="俄羅斯方塊">
+            <button onclick="openGame('tetris.html')">俄羅斯方塊</button>
+            <p>經典的俄羅斯方塊遊戲，玩家需控制下落的方塊形成完整橫行來消除得分。隨著遊戲進行，方塊下落速度加快。堆到頂部即遊戲結束！</p>
+        </div>
+        <div class="game-option">
+            <img src="assets/images/2048.png" alt="2048">
+            <button onclick="openGame('2048.html')">2048</button>
+            <p>2048是一款挑戰你的數字合併技巧的遊戲，通過合併相同的數字來達到2048。</p>
+        </div>
+        <div class="game-option">
+            <img src="assets/images/pacman.png" alt="Pacman">
+            <button onclick="openGame('pacman.html')">Pacman</button>
+            <p>控制糖豆人吃到點點~</p>
+        </div>
+    </div>
+
+    <script>
+        function openGame(game) {
+            window.location.href = game;
+        }
+    </script>
+</body>
+</html>

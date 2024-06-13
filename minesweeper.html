@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>踩地雷 - 遊戲大廳</title>
+    <link rel="stylesheet" href="assets/styles/minesweeper.css">
+</head>
+<body>
+    <h1>踩地雷</h1>
+    <button class="back-button" onclick="window.location.href='index.html'">返回遊戲大廳</button>
+    <div id="minesweeper-game">
+        <div id="menu">
+            <label for="difficulty">選擇難度:</label>
+            <select id="difficulty">
+                <option value="easy">簡單</option>
+                <option value="medium">中等</option>
+                <option value="hard">困難</option>
+            </select>
+            <button onclick="startGame()">開始遊戲</button>
+        </div>
+        <div id="minesweeper-board"></div>
+        <div id="timer">時間: 0 秒</div>
+    </div>
+
+    <script src="js/minesweeper.js"></script>
+</body>
+</html>
